@@ -1,0 +1,10 @@
+package br.com.crud.teste;
+
+public class TestePedido {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

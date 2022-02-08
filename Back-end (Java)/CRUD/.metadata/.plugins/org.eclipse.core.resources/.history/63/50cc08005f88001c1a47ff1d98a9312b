@@ -1,0 +1,102 @@
+package br.com.crud.teste;
+
+
+import java.util.Scanner;
+
+import br.com.crud.dao.ClienteDAO;
+import br.com.crud.models.Cliente;
+
+public class TesteCliente {
+
+	public static void main(String[] args) {
+		
+		
+		boolean sairLoop = true;
+		int op = 0;
+		String nome, cpf, telefone, email= null;
+		Scanner s = new Scanner(System.in);
+		ClienteDAO clienteDAO = new ClienteDAO();
+		
+		
+		do {
+			System.out.println("Escolha uma das opções: ");
+			System.out.println("1 - CADASTRAR CLIENTE\n2 - ATUALIZAR CLIENTE\n3 - DELETAR CLIENTE \n4 - LISTAR CLIENTES ");
+			op = Integer.parseInt(s.nextLine());
+			
+			if(((op<=0)||(op>5))) System.out.println("Opção inválida!");
+			
+		}while((op<=0)||(op>5));
+		
+	
+		if(op == 1) {
+			do {
+				Cliente cliente = new Cliente();
+				sairLoop = false;
+				System.out.println("-------------  CADASTRAR CLIENTE ------------");
+				System.out.print("Digite o nome do cliente:");
+				cliente.setNome(nome = s.nextLine());
+				System.out.print("Digite o CPF do cliente:");
+				cliente.setCpf(cpf = s.nextLine());
+				System.out.print("Digite o telefone do cliente: ");
+				cliente.setTelefone(telefone = s.nextLine());
+				System.out.print("Digite o e-mail do cliente: ");
+				cliente.setEmail(telefone = s.nextLine());
+				
+				//clienteDAO.save(cliente);
+				System.out.println("Inserido com sucesso!");
+				
+				System.out.println("Deseja cadastrar outro cliente? (1 - SIM / 2 - NÃO ) ");
+				int op2 = Integer.parseInt(s.nextLine());
+					do {
+						System.out.println("Opção inválida!");
+						System.out.println(" Escolha uma das opções: (1 - SIM / 2 - NÃO )");
+					}while (op<=0 || op>2 );
+					if(op == 2) sairLoop = true;
+				
+			}while(sairLoop = false);
+			
+			
+			
+			
+		}else if(op == 2) {
+			
+		}
+		
+		
+		
+		
+		
+
+//		Cliente cliente = new Cliente();
+//
+//		cliente.setNome("Priscile");
+//		cliente.setCpf("1325468");
+//		cliente.setTelefone("8888888");
+//		cliente.setEmail("pam@teste.com");
+//
+//			clienteDAO.save(cliente);
+//		
+//		System.out.println("Inserido com sucesso!");
+
+//		Cliente cliente1 = new Cliente();
+//		cliente1.setIdCliente(1);
+//		cliente1.setNome("Dyego Felipe");
+//		cliente1.setCpf("1325468");
+//		cliente1.setTelefone("8888888");
+//		cliente1.setEmail("dyego@teste.com");
+//
+//		clienteDAO.update(cliente1);
+//		System.out.println("Atualizado com sucesso!");
+
+//			clienteDAO.removeByID(2);
+//
+//			System.out.println("Removido com sucesso!");
+
+//		for (Cliente c : clienteDAO.getClientes()) {
+//
+//			System.out.println("NOME: " + c.getNome());
+//
+//		}
+
+	}
+}

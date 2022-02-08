@@ -1,0 +1,45 @@
+package br.com.crud.teste;
+
+import br.com.crud.dao.ClienteDAO;
+import br.com.crud.models.Cliente;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		ClienteDAO clienteDAO = new ClienteDAO();
+
+		Cliente cliente = new Cliente();
+		cliente.setNome("Dyego");
+		cliente.setCpf("1325468");
+		cliente.setTelefone("8888888");
+		cliente.setEmail("dyego@teste.com");
+
+			clienteDAO.save(cliente);
+		
+		System.out.println("Inserido com sucesso!");
+	//
+//			Contato contato1 = new Contato();
+	//
+//			contato1.setId(3);
+//			contato1.setNome("Dyego Felipe");
+//			contato1.setIdade(28);
+//			contato1.setDataCadastro(new Date());
+
+			
+//			 contatoDAO.update(contato1); System.out.println("Atualizado com sucesso!");
+			
+
+//			contatoDAO.removeByID(1);
+
+//			System.out.println("Removido com sucesso!");
+
+			for (Cliente c : clienteDAO.getClientes()) {
+
+				System.out.println("NOME: " + c.getNome());
+		
+
+	}
+
+}
+}

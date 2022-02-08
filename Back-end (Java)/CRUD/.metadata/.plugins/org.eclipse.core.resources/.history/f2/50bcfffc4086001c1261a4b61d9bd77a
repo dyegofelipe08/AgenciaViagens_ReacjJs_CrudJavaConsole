@@ -1,0 +1,37 @@
+package br.com.crud.teste;
+
+import br.com.crud.dao.LocalDAO;
+import br.com.crud.models.Local;
+import br.com.crud.models.Pedido;
+
+public class TesteLocal {
+
+	public static void main(String[] args) {
+
+
+		LocalDAO localDAO = new LocalDAO();
+
+		Local local = new Local();
+
+		local.setDescricao("Fortaleza-CE");
+		local.setPreco(888.90);
+		local.setIdPedido(1);
+
+		localDAO.save(local);
+
+		System.out.println("Dados inseridos com sucesso!");
+		
+		for (Local l : localDAO.getLocais()) {
+
+			System.out.println("ID LOCAL: "+l.getIdLocal()+"\nDESCRIÇÃO DO LOCAL: "+l.getDescricao()+"\nPREÇO: R$ "+l.getPreco()+     
+					"\nN. PEDIDO: " + l.getPedido().getIdPedido() + " \nDATA DO PEDIDO: " + l.getPedido().getDataPedido()
+					+ "\nID CLIENTE: " + l.getPedido().getCliente().getIdCliente() + "\nCLIENTE: " + l.getPedido().getCliente().getNome()
+					+ "\nCPF: " + l.getPedido().getCliente().getCpf() + "\nTELEFONE: " + l.getPedido().getCliente().getTelefone()
+					+ "\nEMAIL: " + l.getPedido().getCliente().getEmail());
+
+		}
+		
+		
+	}
+
+}

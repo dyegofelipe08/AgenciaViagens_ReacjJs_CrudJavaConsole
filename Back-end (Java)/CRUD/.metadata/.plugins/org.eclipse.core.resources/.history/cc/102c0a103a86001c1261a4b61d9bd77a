@@ -1,0 +1,35 @@
+package br.com.crud.teste;
+
+import java.util.Date;
+
+import br.com.crud.dao.PedidoDAO;
+import br.com.crud.models.Cliente;
+import br.com.crud.models.Pedido;
+
+public class TestePedido {
+
+	public static void main(String[] args) {
+
+		PedidoDAO pedidoDAO = new PedidoDAO();
+
+		Pedido pedido = new Pedido();
+
+//		pedido.setDataPedido(new Date());
+//		pedido.setIdCliente(1);
+//
+//		pedidoDAO.save(pedido);
+//
+//		System.out.println("Dados inseridos com sucesso!");
+
+		for (Pedido p : pedidoDAO.getPedidos()) {
+
+			System.out.println("N. PEDIDO: " + p.getIdPedido() + " \nDATA DO PEDIDO: " + pedido.getDataPedido()
+					+ "\nID CLIENTE: " + pedido.getIdCliente() + "\nCLIENTE: " + pedido.getCliente().getNome()
+					+ "\nCPF: " + pedido.getCliente().getCpf() + "\nTELEFONE: " + pedido.getCliente().getTelefone()
+					+ "\nEMAIL: " + pedido.getCliente().getEmail());
+
+		}
+
+	}
+
+}

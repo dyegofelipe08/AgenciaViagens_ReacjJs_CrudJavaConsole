@@ -1,0 +1,36 @@
+package br.com.crud.teste;
+
+import java.util.Date;
+
+import br.com.crud.dao.PedidoDAO;
+import br.com.crud.dao.SuporteDAO;
+import br.com.crud.models.Pedido;
+import br.com.crud.models.Suporte;
+
+public class TesteSuporte {
+
+	public static void main(String[] args) {
+
+		SuporteDAO suporteDAO = new SuporteDAO();
+
+		Suporte suporte = new Suporte();
+
+		suporte.setMensagem("Mensagem de teste 1");
+		suporte.setIdCliente(1);
+
+		suporteDAO.save(suporte);
+//
+		System.out.println("Dados inseridos com sucesso!");
+
+		for (Suporte s : suporteDAO.getSuportes()) {
+
+			System.out.println("ID MENSAGEM: " + s.getIdSuporte() + "\nID CLIENTE: " + s.getCliente().getIdCliente() + "\nNOME DO CLIENTE: " + s.getCliente().getNome()
+					+ "\nCPF: " + s.getCliente().getCpf() + "\nTELEFONE: " + s.getCliente().getTelefone()
+					+ "\nEMAIL: " + s.getCliente().getEmail());
+			System.out.println("------------------------------------------------------------");
+
+		}
+
+	}
+
+}

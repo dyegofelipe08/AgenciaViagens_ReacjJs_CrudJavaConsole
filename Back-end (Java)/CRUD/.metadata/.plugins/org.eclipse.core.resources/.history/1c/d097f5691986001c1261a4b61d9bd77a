@@ -1,0 +1,26 @@
+package br.com.crud.models;
+
+import java.util.Date;
+
+public class PedidoPromo {
+	
+	private int IdPedidoPromo;
+	private Date DataPedidoPromo;
+	
+	
+	public int getIdPedidoPromo() {
+		return IdPedidoPromo;
+	}
+	public void setIdPedidoPromo(int idPedidoPromo) {
+		IdPedidoPromo = idPedidoPromo;
+	}
+	public Date getDataPedidoPromo() {
+		return DataPedidoPromo;
+	}
+	public void setDataPedidoPromo(Date dataPedidoPromo) {
+		DataPedidoPromo = dataPedidoPromo;
+	}
+
+	
+	
+}

@@ -1,0 +1,37 @@
+package br.com.crud.teste;
+
+import br.com.crud.dao.LocalPromoDAO;
+import br.com.crud.models.Local;
+import br.com.crud.models.LocalPromo;
+
+public class TesteLocalPromo {
+
+	public static void main(String[] args) {
+
+
+		LocalPromoDAO localPromoDAO = new LocalPromoDAO();
+
+		LocalPromo localPromo = new LocalPromo();
+
+		localPromo.setDescricaoPromo("Fortaleza-CE");
+		localPromo.setPrecoPromo(888.90);
+		localPromo.setIdPedidoPromo(1);
+
+		localPromoDAO.save(localPromo);
+
+		System.out.println("Dados inseridos com sucesso!");
+		
+		for (LocalPromo l : localPromoDAO.getLocaisPromo()) {
+
+			System.out.println("ID LOCAL: "+l.getIdLocalPromo()+"\nDESCRIÇÃO DO LOCAL: "+l.getDescricaoPromo()+"\nPREÇO: R$ "+l.getPrecoPromo()+     
+					"\nN. PEDIDO: " + l.getPedidoPromo().getIdPedidoPromo() + " \nDATA DO PEDIDO: " + l.getPedidoPromo().getDataPedidoPromo()
+					+ "\nID CLIENTE: " + l.getPedidoPromo().getCliente().getIdCliente() + "\nCLIENTE: " + l.getPedidoPromo().getCliente().getNome()
+					+ "\nCPF: " + l.getPedidoPromo().getCliente().getCpf() + "\nTELEFONE: " + l.getPedidoPromo().getCliente().getTelefone()
+					+ "\nEMAIL: " + l.getPedidoPromo().getCliente().getEmail());
+
+		}
+		
+		
+	}
+
+}

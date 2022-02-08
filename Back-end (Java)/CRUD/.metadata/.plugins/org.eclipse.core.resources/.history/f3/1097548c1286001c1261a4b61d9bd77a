@@ -1,0 +1,14 @@
+package br.com.crud.models;
+
+public class Cliente {
+	
+	private int IdCliente;
+	private String Nome;
+	private String Cpf;
+	private String Telefone;
+	private String Email;
+	
+	
+	
+
+}

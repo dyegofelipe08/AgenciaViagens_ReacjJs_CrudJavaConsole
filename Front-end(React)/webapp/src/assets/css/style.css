@@ -1,0 +1,239 @@
+
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#fff59d;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10pt;
+
+}
+
+.menu {
+    background-color: #00c853;
+    text-decoration: none;
+    padding: 15pt;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  
+
+}
+
+.principal {
+    margin-left: 80pt;
+    margin-right: 80pt;
+    background-color: #448aff;
+    padding-bottom: 70pt;
+}
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+
+}
+
+.tituloGrande {
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
+    
+}
+.tituloGrande2{
+    color: black;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.tituloMedio{
+    color: black;
+    font-size: 3rem;
+    font-weight: 1;
+    line-height: 1.2;
+}
+
+.paragrafoPriincipal {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.paragrafoCard{
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+    flex: 1;
+}
+.cardPrincipal{
+    width:300px ;
+    height: 370px;
+    border: solid #448aff;
+    border-width: 1px;
+    margin: 20px;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:#448aff ;
+    
+   
+
+
+   
+    
+}
+.direcao{
+    
+    width:80%;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+
+    
+}
+.imgCard{
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+   
+   
+
+
+    
+}
+
+.botaoGrande {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    padding-bottom: 15pt;
+    padding-top: 15pt;
+    margin-top: 20pt;
+    text-align: center;
+    border-radius: 10px;
+
+
+}
+.botaoMedio {
+    display: inline-block;
+    width: 15%;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    padding-bottom: 8pt;
+    padding-top: 8pt;
+    margin-top: 5pt;
+    margin-bottom: 25pt;
+    text-align: center;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+
+
+}
+.botao{
+    display: inline-block;
+    width: 50%;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    padding-bottom: 8pt;
+    padding-top: 8pt;
+    margin-top: 5pt;
+    margin-bottom: 25pt;
+    text-align: center;
+    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
+   
+    
+}
+.botaoHome{
+    display: block;
+    width: 10%;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    padding-bottom: 8pt;
+    padding-top: 8pt;
+    margin-top: 25pt;
+    margin-bottom:25pt;
+    text-align: center;
+    border-radius: 10px;
+   
+}
+.botaoCenter{
+display: flex;
+justify-content: center;
+}
+.molde{
+    margin-left: 80pt;
+    margin-right: 80pt;
+    
+}
+
+.rodape {
+    text-align: center;
+    padding: 30pt;
+
+
+
+}
+
+.categorias {
+    float: left;
+    margin-bottom: 80%;
+    margin-right: 50px;
+    width: 250px;
+    height: 100%;
+    border: solid red;
+
+}
+
+.produtos {
+    width: 100%;
+}
+
+.box_produto {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+
+
+
+}
+input{
+    height: 25px;
+    width: 400px;
+    border-radius: 5px;
+    border:solid black 1px;
+}
+select{
+    height: 25px;
+    width: 400px;
+    border-radius: 5px;
+    border:solid black 1px;
+}
+
+
+    

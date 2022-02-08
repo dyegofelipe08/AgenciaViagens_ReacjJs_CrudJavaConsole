@@ -1,0 +1,63 @@
+package br.com.crud.teste;
+
+
+import java.util.Scanner;
+
+import br.com.crud.dao.ClienteDAO;
+import br.com.crud.models.Cliente;
+
+public class TesteCliente {
+
+	public static void main(String[] args) {
+
+		ClienteDAO clienteDAO = new ClienteDAO();
+		
+		System.out.println("Escolha uma das opções: ");
+		System.out.println("1 - CADASTRAR CLIENTE\n2 - ATUALIZAR CLIENTE\n3 - DELETAR CLIENTE \n4 - LISTAR CLIENTES ");
+		
+		int op = 0;
+		
+		Scanner s = new Scanner(System.in);
+		
+		if (op <1 && op> 4) {
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+
+//		Cliente cliente = new Cliente();
+//
+//		cliente.setNome("Priscile");
+//		cliente.setCpf("1325468");
+//		cliente.setTelefone("8888888");
+//		cliente.setEmail("pam@teste.com");
+//
+//			clienteDAO.save(cliente);
+//		
+//		System.out.println("Inserido com sucesso!");
+
+//		Cliente cliente1 = new Cliente();
+//		cliente1.setIdCliente(1);
+//		cliente1.setNome("Dyego Felipe");
+//		cliente1.setCpf("1325468");
+//		cliente1.setTelefone("8888888");
+//		cliente1.setEmail("dyego@teste.com");
+//
+//		clienteDAO.update(cliente1);
+//		System.out.println("Atualizado com sucesso!");
+
+//			clienteDAO.removeByID(2);
+//
+//			System.out.println("Removido com sucesso!");
+
+//		for (Cliente c : clienteDAO.getClientes()) {
+//
+//			System.out.println("NOME: " + c.getNome());
+//
+//		}
+
+	}
+}

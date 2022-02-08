@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\DEV SISTEMAS\Projetos Recode Pro\ProjetoAtidadeMod4\Back-end (Java)\CRUD\.metadata\.plugins\org.eclipse.jdt.core
+3180773290.index
+3245897684.index
+3846102697.index

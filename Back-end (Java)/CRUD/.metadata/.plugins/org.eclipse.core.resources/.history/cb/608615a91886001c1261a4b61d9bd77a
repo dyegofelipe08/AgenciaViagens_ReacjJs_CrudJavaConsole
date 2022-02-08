@@ -1,0 +1,11 @@
+package br.com.crud.models;
+
+import java.util.Date;
+
+public class Pedido {
+
+	private int IdPedido;
+	private Date DataPedido;
+	
+	
+}

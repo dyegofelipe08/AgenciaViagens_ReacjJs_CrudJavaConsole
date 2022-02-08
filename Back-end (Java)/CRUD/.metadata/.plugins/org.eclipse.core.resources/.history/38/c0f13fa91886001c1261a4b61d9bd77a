@@ -1,0 +1,29 @@
+package br.com.crud.models;
+
+public class Local {
+
+	private int IdLocal;
+	private String Descricao;
+	private double Preco;
+	
+	public int getIdLocal() {
+		return IdLocal;
+	}
+	public void setIdLocal(int idLocal) {
+		IdLocal = idLocal;
+	}
+	public String getDescricao() {
+		return Descricao;
+	}
+	public void setDescricao(String descricao) {
+		Descricao = descricao;
+	}
+	public double getPreco() {
+		return Preco;
+	}
+	public void setPreco(double preco) {
+		Preco = preco;
+	}
+	
+	
+}
